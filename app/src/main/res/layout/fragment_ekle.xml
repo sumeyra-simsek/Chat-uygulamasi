@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cerceve.EkleFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/arkapln">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yazı Paylaş"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/logomsu"
+                android:id="@+id/uploadImage"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"/>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/edtBaslik"
+                android:background="@drawable/arkapln"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Yazı Başlığı"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/edtAciklama"
+                android:background="@drawable/arkapln"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Yazı detayı"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/edtLink"
+                android:background="@drawable/arkapln"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Kaynak Ekleyiniz."
+                android:gravity="start|center_vertical"
+                android:textColor="@color/black"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Gönder"
+                android:id="@+id/btnGonder"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                app:cornerRadius = "20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

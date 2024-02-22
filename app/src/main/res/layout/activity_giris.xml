@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkapln"
+    tools:context=".GirisActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:id="@+id/geritusu"
+            android:background="@drawable/iconback"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:layout_marginStart="140dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPhone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:hint="Telefon numarası"
+            android:inputType="phone"
+            android:text="01"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="34sp"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/black"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="1234"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="34sp"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/black"
+            app:met_singleLineEllipsis="true" />
+        <TextView
+            android:layout_marginStart="35dp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Hesabınız yok mu? kayıt olmak için tıklayınız."/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGirisYap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:height="5dp"
+        android:enabled="true"
+        android:outlineAmbientShadowColor="@color/white"
+        android:shadowColor="@android:color/black"
+        android:text="Giriş Yap"
+        android:background="@drawable/btnarka"
+        android:textColor="@color/white"
+        app:cornerRadius="4dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logomsu"
+        />
+
+
+</RelativeLayout>

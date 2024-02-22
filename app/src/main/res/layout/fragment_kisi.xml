@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="30dp"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/arkapln"
+    android:layout_marginHorizontal="30dp"
+    android:layout_marginVertical="25dp"
+    >
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cardviewarkaplan"
+        app:cardCornerRadius="56dp"
+        android:layout_marginStart="15dp">
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="100dp"
+            />
+
+        <TextView
+            android:id="@+id/txtProfilnae"
+            android:layout_width="35dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
+            android:hint="🌸"
+            android:textSize="25dp"></TextView>
+
+        <TextView
+            android:id="@+id/txtProfilname"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="150dp"
+            android:hint="İsim"
+            android:textStyle="bold"
+            android:textSize="25dp"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="230dp"
+        android:background="@color/bilmiyom"
+        >
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="👤İletişim Bilgileri:"></TextView>
+
+        <TextView
+            android:id="@+id/txtBilgi"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="90dp"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Bilgi giriniz."></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:text="📍Konum:"></TextView>
+        <TextView
+            android:id="@+id/txtKonum"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Bilgi Giriniz."
+            android:textSize="18dp"></TextView>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

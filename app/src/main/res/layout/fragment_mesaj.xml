@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".cerceve.MesajFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/teal_600"
+        android:background="@color/white">
+        <ImageButton
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:id="@+id/geritusu"
+            android:background="@drawable/iconback"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="25dp"
+            android:id="@+id/profilresmichat"
+            android:background="@drawable/iconprofile"/>
+        <TextView
+            android:id="@+id/txtisim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Selam"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="636dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/teal_600" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/teal_600"
+        android:id="@+id/relati">
+        <EditText
+            android:id="@+id/edtmesaj"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="5dp"
+            android:hint="Mesaj giriniz..."
+            android:layout_marginEnd="45dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/gonder"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/icongonder"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

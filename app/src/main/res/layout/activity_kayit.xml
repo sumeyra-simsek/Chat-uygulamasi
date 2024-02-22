@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkapln"
+    tools:context=".KayitActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <ImageButton
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:id="@+id/geritusu"
+        android:background="@drawable/iconback"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPhone"
+            android:hint="Telefon numarası"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:text="01"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:inputType="phone"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/black"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtName"
+            android:hint="Kullanıcı Adı"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:text="Macide"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:inputType="text"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="15"
+            app:met_primaryColor="@color/black"
+            app:met_singleLineEllipsis="true" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:text="1234"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:inputType="textPassword"
+            app:met_baseColor="@color/black"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/black"
+            app:met_singleLineEllipsis="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:text="Hesabınız var mı? Giriş yapmak için tıklayınız"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnKayitOl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:height="5dp"
+        android:enabled="true"
+        android:outlineAmbientShadowColor="@color/purple_200"
+        android:shadowColor="@android:color/black"
+        android:text="Kayıt Ol"
+        android:background="@drawable/btnarka"
+        android:textColor="@color/black"
+        app:cornerRadius="4dp" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logomsu"
+         />
+
+
+
+</RelativeLayout>

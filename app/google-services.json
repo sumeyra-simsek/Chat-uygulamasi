@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "532356276205",
+    "project_id": "projedersi-f4fe0",
+    "storage_bucket": "projedersi-f4fe0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532356276205:android:c0b2df3bb64dd8f49e51e4",
+        "android_client_info": {
+          "package_name": "com.sumeyrasimsek.projedersi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532356276205-0ci1r30add3cmgn1epmrv2sjjha3oabu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnriddjrG22b-SB-9MAk6v3LpobvAiECw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532356276205-0ci1r30add3cmgn1epmrv2sjjha3oabu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
